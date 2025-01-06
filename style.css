@@ -31,3 +31,167 @@ button:hover {
     box-shadow: inset 0 -3px #000000aa;
     color: #000;
 }
+
+#bluetooth {
+    color: #55aaff;
+}
+
+#bluetooth.disabled {
+    color: #ff0000;
+}
+
+#bluetooth.no-controller {
+    color: #ff0000;
+}
+
+#bluetooth.off {
+    color: #aaaaaa;
+}
+
+#bluetooth.connected {
+    color: #77cc44;
+}
+
+#cpu.chill {
+    color: #cccccc;
+}
+
+#cpu.low {
+    color: #2aa9ff;
+}
+
+#cpu.ok {
+    color: #44bb99;
+}
+
+#cpu.average {
+    color: #77cc44;
+}
+
+#cpu.demanding {
+    color: #eebb44;
+}
+
+#cpu.loaded {
+    color: #ff7722;
+}
+
+#cpu.high {
+    color: #dd5511;
+}
+
+#cpu.critical {
+    color: #ff0000;
+}
+
+#memory.chill {
+    color: #cccccc;
+}
+
+#memory.low {
+    color: #2aa9ff;
+}
+
+#memory.ok {
+    color: #44bb99;
+}
+
+#memory.average {
+    color: #77cc44;
+}
+
+#memory.demanding {
+    color: #eebb44;
+}
+
+#memory.loaded {
+    color: #ff7722;
+}
+
+#memory.high {
+    color: #dd5511;
+}
+
+#memory.critical {
+    color: #ff0000;
+}
+
+#temperature {
+    color: #cccccc;
+}
+
+#temperature.critical {
+    color: #ff0000;
+}
+
+#disk.low {
+    color: #cccccc;
+}
+
+#disk.warning {
+    color: #eebb44;
+}
+
+#disk.high {
+    color: #ff7722;
+}
+
+#disk.critical {
+    color: #ff0000;
+}
+
+#backlight.one {
+    color: #cc9922;
+}
+
+#backlight.two {
+    color: #c59a3e;
+}
+
+#backlight.three {
+    color: #bc9c59;
+}
+
+#backlight.four {
+    color: #b39f75;
+}
+
+#backlight.five {
+    color: #aba191;
+}
+
+#backlight.six {
+    color: #a2a3ac;
+}
+
+#backlight.seven {
+    color: #99a6c8;
+}
+
+#backlight.eight {
+    color: #91a8e4;
+}
+
+#backlight.nine {
+    color: #88aaff;
+}
+
+#battery.good {
+    color: #77cc44;
+}
+
+#battery.warning {
+    color: #eeaa44;
+}
+
+#battery.critical {
+    color: #ff0000;
+}
+
+#battery.charging {
+    color: #55aaff
+}
+
+#battery.full {
+    color: #77cc44;
+}
