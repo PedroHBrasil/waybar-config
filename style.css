@@ -52,6 +52,22 @@ button:hover {
     color: #77cc44;
 }
 
+#pulseaudio.bluetooth {
+    color: #2aa9ff;
+}
+
+#pulseaudio.ok {
+    color: #77cc44
+}
+
+#pulseaudio.warning {
+    color: #eebb44
+}
+
+#pulseaudio.critical {
+    color: #ff0000
+}
+
 #cpu.chill {
     color: #cccccc;
 }
@@ -181,7 +197,7 @@ button:hover {
 }
 
 #battery.warning {
-    color: #eeaa44;
+    color: #eebb44;
 }
 
 #battery.critical {
