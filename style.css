@@ -15,13 +15,13 @@ button {
     box-shadow: inset 0 -3px transparent;
     background: rgba(22, 22, 22, 0.8);
     color: #cccccc;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 0px;
 }
 
 #workspaces button {
     color: #cccccc;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #workspaces button:hover {
@@ -29,60 +29,59 @@ button {
     color: #77cc44;
     font-weight: bold;
     border: 2px solid #77cc44;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #workspaces button.active {
     color: #cccccc;
     font-weight: bold;
     border: 2px solid #77cc44;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 #window {
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #clock {
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #language {
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #submap {
     border: 2px solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #bluetooth {
-    border: 2px solid #55aaff;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
     color: #55aaff;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #bluetooth.disabled {
-    border: 2px solid #ff0000;
-    color: #ff0000;
+    border: 2px solid #aaaaaa;
+    color: #aaaaaa;
 }
 
 #bluetooth.no-controller {
@@ -91,29 +90,25 @@ button {
 }
 
 #bluetooth.off {
-    border: 2px solid #aaaaaa;
     color: #aaaaaa;
 }
 
 #bluetooth.connected {
-    border: 2px solid #77cc44;
     color: #77cc44;
 }
 
 #pulseaudio {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #pulseaudio.bluetooth {
-    border: 2px solid #2aa9ff;
     color: #2aa9ff;
 }
 
 #pulseaudio.ok {
-    border: 2px solid #77cc44;
     color: #77cc44
 }
 
@@ -128,17 +123,17 @@ button {
 }
 
 #network {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #cpu {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #cpu.chill {
@@ -180,10 +175,10 @@ button {
 }
 
 #memory {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #memory.chill {
@@ -225,10 +220,10 @@ button {
 }
 
 #temperature {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #temperature {
@@ -241,10 +236,10 @@ button {
 }
 
 #disk {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #disk.low {
@@ -267,62 +262,53 @@ button {
 }
 
 #backlight {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #backlight.one {
-    border: 2px solid #cc9922;
     color: #cc9922;
 }
 
 #backlight.two {
-    border: 2px solid #c59a3e;
     color: #c59a3e;
 }
 
 #backlight.three {
-    border: 2px solid #bc9c59;
     color: #bc9c59;
 }
 
 #backlight.four {
-    border: 2px solid #b39f75;
     color: #b39f75;
 }
 
 #backlight.five {
-    border: 2px solid #aba191;
     color: #aba191;
 }
 
 #backlight.six {
-    border: 2px solid #a2a3ac;
     color: #a2a3ac;
 }
 
 #backlight.seven {
-    border: 2px solid #99a6c8;
     color: #99a6c8;
 }
 
 #backlight.eight {
-    border: 2px solid #91a8e4;
     color: #91a8e4;
 }
 
 #backlight.nine {
-    border: 2px solid #88aaff;
     color: #88aaff;
 }
 
 #battery {
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgba(16, 16, 16, 0.8);
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #battery.good {

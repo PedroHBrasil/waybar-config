@@ -2,31 +2,32 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 5, // Gaps between modules (4px)
-    "margin-top": 5,
-    "margin-left": 5,
-    "margin-right": 5,
+    "spacing": 4, // Gaps between modules (4px)
+    "margin-top": 4,
+    "margin-left": 4,
+    "margin-right": 4,
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
+        "hyprland/language",
+        "hyprland/submap",
         "hyprland/window"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "hyprland/language",
-        "hyprland/submap",
-        "bluetooth",
-        "pulseaudio",
-        "backlight",
-        "network",
         "cpu",
         "memory",
         "disk",
+        "disk#home",
         "temperature",
+        "network",
+        "bluetooth",
+        "backlight",
+        "pulseaudio",
         "battery"
     ],
     // Modules configuration
@@ -37,8 +38,8 @@
     "bluetooth": {
         "on-click": "blueman-manager",
         "format-disabled": "",
-        "format-off": "󰂲",
-        "format-on": "󰂯",
+        "format-off": "Off 󰂲",
+        "format-on": "On 󰂯",
         "format-connected": "{device_battery_percentage} 󰂱",
         "tooltip": true,
         "tooltip-format-disabled": "disabled",
@@ -169,6 +170,18 @@
         },
         "on-click": "kitty yazi"
     },
+    "disk#home": {
+        "interval": 30,
+        "format": "{percentage_used}󱉸  ",
+        "path": "/home",
+        "states": {
+            "low": 0,
+            "warning": 70,
+            "high": 80,
+            "critical": 90
+        },
+        "on-click": "kitty yazi"
+    },
     "temperature": {
         "thermal-zone": 0,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -233,6 +246,7 @@
         ]
     },
     "clock": {
+        "format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     }
