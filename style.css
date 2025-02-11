@@ -21,15 +21,15 @@ button {
 }
 
 #workspaces button:hover {
-    color: #98bb6c;
+    color: #7e9cd8;
     font-weight: bold;
-    border: 2px solid #98bb6c;
+    border: 2px solid #7e9cd8;
     border-radius: 4px;
 }
 
 #workspaces button.active {
     font-weight: bold;
-    border: 2px solid #98bb6c;
+    border: 2px solid #7e9cd8;
     border-radius: 4px;
 }
 
