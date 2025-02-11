@@ -19,6 +19,7 @@
         "clock"
     ],
     "modules-right": [
+        "power-profiles-daemon",
         "cpu",
         "memory",
         "disk",
@@ -45,7 +46,7 @@
         "tooltip-format-disabled": "disabled",
         "tooltip-format-off": "off",
         "tooltip-format-on": "on",
-        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-connected": "{device_alias} {device_battery_percentage}",
         "tooltip-format-enumerate-connected": "{device_alias} {device_battery_percentage}"
     },
     // "mpd": {
@@ -74,6 +75,11 @@
     //     "tooltip-format": "MPD (connected)",
     //     "tooltip-format-disconnected": "MPD (disconnected)"
     // },
+    "hyprland/window": {
+        "format": "{title}",
+        "separate-outputs": true,
+        "icon": true
+    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "WiFi {frequency} {essid} ({signalStrength}%) {icon}",
@@ -119,28 +125,37 @@
         },
         "on-click": "pavucontrol"
     },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
     "cpu": {
         "interval": 1,
         "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15} {usage}󱉸 󰻠 ",
         "format-icons": [
             "<span color='#cccccc'>▁</span>",
-            "<span color='#2aa9ff'>▂</span>",
-            "<span color='#44bb99'>▃</span>",
-            "<span color='#77cc44'>▄</span>",
-            "<span color='#eebb44'>▅</span>",
-            "<span color='#ff7722'>▆</span>",
-            "<span color='#dd5511'>▇</span>",
-            "<span color='#ff0000'>█</span>"
+            "<span color='#7e9cd8'>▂</span>",
+            "<span color='#7e9cd8'>▃</span>",
+            "<span color='#98bb6c'>▄</span>",
+            "<span color='#dca561'>▅</span>",
+            "<span color='#dca561'>▆</span>",
+            "<span color='#ff9e3b'>▇</span>",
+            "<span color='#e82424'>█</span>"
         ],
         "states": {
             "chill": 0,
             "low": 20,
             "ok": 40,
-            "average": 50,
-            "demanding": 60,
-            "loaded": 70,
-            "high": 80,
-            "critical": 90
+            "high": 75,
+            "warning": 90,
+            "critical": 95
         },
         "on-click": "kitty htop"
     },
@@ -150,11 +165,9 @@
             "chill": 0,
             "low": 20,
             "ok": 40,
-            "average": 50,
-            "demanding": 60,
-            "loaded": 70,
-            "high": 80,
-            "critical": 90
+            "high": 75,
+            "warning": 90,
+            "critical": 95
         },
         "on-click": "kitty htop"
     },
@@ -164,20 +177,20 @@
         "path": "/",
         "states": {
             "low": 0,
-            "warning": 70,
-            "high": 80,
+            "high": 70,
+            "warning": 80,
             "critical": 90
         },
         "on-click": "kitty yazi"
     },
     "disk#home": {
         "interval": 30,
-        "format": "{percentage_used}󱉸  ",
+        "format": "{percentage_used}󱉸 󱂵 ",
         "path": "/home",
         "states": {
             "low": 0,
-            "warning": 70,
-            "high": 80,
+            "high": 70,
+            "warning": 80,
             "critical": 90
         },
         "on-click": "kitty yazi"
