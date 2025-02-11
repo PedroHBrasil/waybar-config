@@ -2,25 +2,21 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
+    color: #dcd7ba;
 }
 
 window#waybar {
-    color: #cccccc;
     background-color: rgba(31, 31, 40, 0);
-    /* transition-property: background-color; */
-    /* transition-duration: .5s; */
 }
 
 button {
     box-shadow: inset 0 -3px transparent;
     background: rgba(31, 31, 40, 0.8);
-    color: #cccccc;
     border-radius: 4px;
     margin: 0px;
 }
 
 #workspaces button {
-    color: #cccccc;
     border-radius: 4px;
 }
 
@@ -32,7 +28,6 @@ button {
 }
 
 #workspaces button.active {
-    color: #cccccc;
     font-weight: bold;
     border: 2px solid #98bb6c;
     border-radius: 4px;
@@ -42,7 +37,7 @@ button {
     border: 2px solid transparent;
     border-radius: 4px;
     background-color: rgba(31, 31, 40, 0.8);
-    /* background-color: rgba(31, 31, 31, 0.8); */
+    /* background-color: rgba(31, 31, 40, 0.8); */
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -50,7 +45,7 @@ button {
 #clock {
     border: 2px solid transparent;
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -58,7 +53,7 @@ button {
 #language {
     border: 2px solid transparent;
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -66,14 +61,14 @@ button {
 #submap {
     border: 2px solid transparent;
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
 
 #bluetooth {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     color: #7e9cd8;
     padding-left: 4px;
     padding-right: 4px;
@@ -88,7 +83,7 @@ button {
 }
 
 #bluetooth.off {
-    color: #cccccc;
+    color: #dcd7ba;
 }
 
 #bluetooth.connected {
@@ -97,7 +92,7 @@ button {
 
 #pulseaudio {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -120,17 +115,16 @@ button {
 
 #network {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
 
 #power-profiles-daemon {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
-    color: #cccccc;
 }
 
 #power-profiles-daemon.power-saver {
@@ -147,13 +141,9 @@ button {
 
 #cpu {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
-}
-
-#cpu.chill {
-    color: #cccccc;
 }
 
 #cpu.low {
@@ -178,13 +168,9 @@ button {
 
 #memory {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
-}
-
-#memory.chill {
-    color: #cccccc;
 }
 
 #memory.low {
@@ -209,29 +195,20 @@ button {
 
 #temperature {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
 
-#temperature {
-    color: #cccccc;
-}
-
 #temperature.critical {
-    border: 2px solid #e82424;
     color: #e82424;
 }
 
 #disk {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
-}
-
-#disk.low {
-    color: #cccccc;
 }
 
 #disk.high {
@@ -250,16 +227,15 @@ button {
 }
 
 #backlight {
-    color: #cccccc;
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
 
 #battery {
     border-radius: 4px;
-    background-color: rgba(31, 31, 31, 0.8);
+    background-color: rgba(31, 31, 40, 0.8);
     padding-left: 4px;
     padding-right: 4px;
 }
