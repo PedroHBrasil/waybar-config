@@ -3,6 +3,8 @@
     font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #dcd7ba;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 window#waybar {
@@ -23,6 +25,8 @@ button {
 
 #workspaces button {
     border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #workspaces button:hover {
