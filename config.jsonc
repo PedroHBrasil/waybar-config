@@ -2,7 +2,7 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 36, // Waybar height (to be removed for auto height)
+    // "height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     "margin-top": 4,
@@ -82,9 +82,9 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "WiFi {frequency} {essid} ({signalStrength}%) {icon}",
+        "format-wifi": "WiFi {frequency}GHz ({signalStrength}%) {icon}",
         "format-ethernet": "Wired 󰈁",
-        "tooltip-format": "󰕒 {bandwidthUpBytes} \n󰇚 {bandwidthDownBytes}\n󰢩 {ifname}\n󰩟 {ipaddr}/{cidr}\n󱂇 {gwaddr}",
+        "tooltip-format": "{essid}\n 󰕒 {bandwidthUpBytes} \n󰇚 {bandwidthDownBytes}\n󰢩 {ifname}\n󰩟 {ipaddr}/{cidr}\n󱂇 {gwaddr}",
         "format-linked": "{ifname} (No IP) 󰈁",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",

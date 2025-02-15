@@ -1,12 +1,17 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Inter, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #dcd7ba;
 }
 
 window#waybar {
     background-color: rgba(31, 31, 40, 0);
+}
+
+.modules-center {
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 button {
