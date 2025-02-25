@@ -99,11 +99,11 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{volume}󱉸 {icon}",
+        "format-bluetooth": "{volume}󱉸 {icon} {format_source}",
         "format-bluetooth-muted": "󰝟 {icon} {format_source}",
         "format-muted": "󰝟 {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "{volume}󱉸 ",
         "format-source-muted": " ",
         "format-icons": {
             "headphone": " ",
@@ -130,10 +130,10 @@
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
-            "default": "",
-            "performance": "",
-            "balanced": "",
-            "power-saver": ""
+            "default": " ",
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " "
         }
     },
     "cpu": {
@@ -200,28 +200,28 @@
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 90,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}󰔄 {icon} ",
+        "format": "{temperatureC}󰔄 {icon}",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
         ],
         "on-click": "kitty htop"
     },
     "backlight": {
-        "format": "{percent}% {icon}",
+        "format": "{percent}󱉸 {icon}",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
         ],
         "states": {
             "one": 0,
@@ -250,12 +250,12 @@
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
         ]
     },
     "clock": {
