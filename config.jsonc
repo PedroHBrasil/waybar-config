@@ -38,10 +38,10 @@
     },
     "bluetooth": {
         "on-click": "ghostty -e bluetui",
-        "format-disabled": "",
-        "format-off": "Off 󰂲",
-        "format-on": "On 󰂯",
-        "format-connected": "{device_battery_percentage} 󰂱",
+        "format-disabled": "  ",
+        "format-off": " 󰂲 ",
+        "format-on": " 󰂯 ",
+        "format-connected": " {device_battery_percentage} 󰂱 ",
         "tooltip": true,
         "tooltip-format-disabled": "disabled",
         "tooltip-format-off": "off",
@@ -82,40 +82,39 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "WiFi {frequency}GHz ({signalStrength}%) {icon}",
-        "format-ethernet": "Wired 󰈁",
+        "format-wifi": " WiFi {frequency}GHz ({signalStrength}%) {icon} ",
+        "format-ethernet": " Wired 󰈁 ",
         "tooltip-format": "{essid}\n󰕒 {bandwidthUpBytes} \n󰇚 {bandwidthDownBytes}\n󰢩 {ifname}\n󰩟 {ipaddr}/{cidr}\n󱂇 {gwaddr}",
-        "format-linked": "{ifname} (No IP) 󰈁",
-        "format-disconnected": "Disconnected ⚠",
-        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-linked": " {ifname} (No IP) 󰈁 ",
+        "format-disconnected": " Disconnected ⚠ ",
         "format-icons": [
-            "󰤯 ",
-            "󰤟 ",
-            "󰤢 ",
-            "󰤥 ",
-            "󰤨 "
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
         ],
         "on-click": "ghostty -e nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}󱉸 {icon}",
-        "format-bluetooth": "{volume}󱉸 {icon} {format_source}",
-        "format-bluetooth-muted": "󰝟 {icon} {format_source}",
-        "format-muted": "󰝟 {format_source}",
-        "format-source": "{volume}󱉸 ",
-        "format-source-muted": " ",
+        "format": " {volume}󱉸 {icon} ",
+        "format-bluetooth": " {volume}󱉸 {icon} {format_source} ",
+        "format-bluetooth-muted": " 󰝟 {icon} {format_source} ",
+        "format-muted": " 󰝟 {format_source} ",
+        "format-source": " {volume}󱉸  ",
+        "format-source-muted": "  ",
         "format-icons": {
-            "headphone": " ",
-            "hands-free": " ",
-            "headset": "󰋎 ",
-            "phone": " ",
-            "portable": " ",
-            "car": " ",
+            "headphone": "",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
             "default": [
-                " ",
-                " ",
-                " "
+                "",
+                "",
+                ""
             ]
         },
         "states": {
@@ -126,41 +125,39 @@
         "on-click": "pwvucontrol"
     },
     "power-profiles-daemon": {
-        "format": "{icon}",
+        "format": " {icon} ",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
-            "default": " ",
-            "performance": " ",
-            "balanced": " ",
-            "power-saver": " "
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
         }
     },
     "cpu": {
         "interval": 1,
-        "format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15} {usage}󱉸  ",
+        "format": " {icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7}{icon8}{icon9}{icon10}{icon11}{icon12}{icon13}{icon14}{icon15} {usage}󱉸  ",
         "format-icons": [
-            "<span color='#dcd7ba'>▁</span>",
-            "<span color='#7e9cd8'>▂</span>",
-            "<span color='#7e9cd8'>▃</span>",
-            "<span color='#98bb6c'>▄</span>",
-            "<span color='#dca561'>▅</span>",
-            "<span color='#dca561'>▆</span>",
-            "<span color='#ff9e3b'>▇</span>",
-            "<span color='#e82424'>█</span>"
+            "<span color='#dcd7ba'></span>",
+            "<span color='#7e9cd8'></span>",
+            "<span color='#98bb6c'></span>",
+            "<span color='#dca561'></span>",
+            "<span color='#ff9e3b'></span>",
+            "<span color='#e82424'></span>"
         ],
         "states": {
             "chill": 0,
             "low": 20,
             "ok": 40,
-            "high": 75,
-            "warning": 90,
-            "critical": 95
+            "high": 60,
+            "warning": 80,
+            "critical": 90
         },
         "on-click": "ghostty -e htop"
     },
     "memory": {
-        "format": "{}󱉸  ",
+        "format": " {}󱉸  ",
         "states": {
             "chill": 0,
             "low": 20,
@@ -173,7 +170,7 @@
     },
     "disk": {
         "interval": 30,
-        "format": "{percentage_used}󱉸  ",
+        "format": " {percentage_used}󱉸  ",
         "path": "/",
         "states": {
             "low": 0,
@@ -185,7 +182,7 @@
     },
     "disk#home": {
         "interval": 30,
-        "format": "{percentage_used}󱉸 󱂵 ",
+        "format": " {percentage_used}󱉸 󱂵 ",
         "path": "/home",
         "states": {
             "low": 0,
@@ -200,28 +197,28 @@
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 90,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}󰔄 {icon}",
+        "format": " {temperatureC}󰔄 {icon} ",
         "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         "on-click": "ghostty -e htop"
     },
     "backlight": {
-        "format": "{percent}󱉸 {icon}",
+        "format": " {percent}󱉸 {icon} ",
         "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ],
         "states": {
             "one": 0,
@@ -243,19 +240,19 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}󱉸 {icon}",
-        "format-full": "{capacity}󱉸 {icon}",
-        "format-charging": "{capacity}󱉸 󰂄 ",
-        "format-plugged": "{capacity}󱉸  ",
-        "format-alt": "{time} {icon}",
+        "format": " {capacity}󱉸 {icon} ",
+        "format-full": " {capacity}󱉸 {icon} ",
+        "format-charging": " {capacity}󱉸 󰂄 ",
+        "format-plugged": " {capacity}󱉸  ",
+        "format-alt": " {time} {icon} ",
         // "format-good": "", // An empty format will hide the module
         "format-icons": [
-            "󰂃 ",
-            "󰁻 ",
-            "󰁽 ",
-            "󰁿 ",
-            "󰂁 ",
-            "󰁹 "
+            "󰂃",
+            "󰁻",
+            "󰁽",
+            "󰁿",
+            "󰂁",
+            "󰁹"
         ]
     },
     "clock": {
