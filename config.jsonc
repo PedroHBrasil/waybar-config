@@ -37,7 +37,7 @@
         "format": "{name}"
     },
     "bluetooth": {
-        "on-click": "blueman-manager",
+        "on-click": "ghostty -e bluetui",
         "format-disabled": "",
         "format-off": "Off 󰂲",
         "format-on": "On 󰂯",
@@ -84,7 +84,7 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "WiFi {frequency}GHz ({signalStrength}%) {icon}",
         "format-ethernet": "Wired 󰈁",
-        "tooltip-format": "{essid}\n 󰕒 {bandwidthUpBytes} \n󰇚 {bandwidthDownBytes}\n󰢩 {ifname}\n󰩟 {ipaddr}/{cidr}\n󱂇 {gwaddr}",
+        "tooltip-format": "{essid}\n󰕒 {bandwidthUpBytes} \n󰇚 {bandwidthDownBytes}\n󰢩 {ifname}\n󰩟 {ipaddr}/{cidr}\n󱂇 {gwaddr}",
         "format-linked": "{ifname} (No IP) 󰈁",
         "format-disconnected": "Disconnected ⚠",
         // "format-alt": "{ifname}: {ipaddr}/{cidr}",
@@ -95,7 +95,7 @@
             "󰤥 ",
             "󰤨 "
         ],
-        "on-click": "kitty nmtui"
+        "on-click": "ghostty -e nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -123,7 +123,7 @@
             "warning": 90,
             "critical": 100
         },
-        "on-click": "pavucontrol"
+        "on-click": "pwvucontrol"
     },
     "power-profiles-daemon": {
         "format": "{icon}",
@@ -157,7 +157,7 @@
             "warning": 90,
             "critical": 95
         },
-        "on-click": "kitty htop"
+        "on-click": "ghostty -e htop"
     },
     "memory": {
         "format": "{}󱉸  ",
@@ -169,7 +169,7 @@
             "warning": 90,
             "critical": 95
         },
-        "on-click": "kitty htop"
+        "on-click": "ghostty -e htop"
     },
     "disk": {
         "interval": 30,
@@ -181,7 +181,7 @@
             "warning": 80,
             "critical": 90
         },
-        "on-click": "kitty yazi"
+        "on-click": "ghostty -e yazi"
     },
     "disk#home": {
         "interval": 30,
@@ -193,10 +193,10 @@
             "warning": 80,
             "critical": 90
         },
-        "on-click": "kitty yazi"
+        "on-click": "ghostty -e yazi"
     },
     "temperature": {
-        "thermal-zone": 0,
+        "thermal-zone": 3,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 90,
         // "format-critical": "{temperatureC}°C {icon}",
@@ -208,7 +208,7 @@
             " ",
             " "
         ],
-        "on-click": "kitty htop"
+        "on-click": "ghostty -e htop"
     },
     "backlight": {
         "format": "{percent}󱉸 {icon}",
@@ -243,19 +243,19 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format": "{capacity}󱉸 {icon}",
+        "format-full": "{capacity}󱉸 {icon}",
+        "format-charging": "{capacity}󱉸 󰂄 ",
+        "format-plugged": "{capacity}󱉸  ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         "format-icons": [
-            " ",
-            " ",
-            " ",
-            " ",
-            " ",
-            " "
+            "󰂃 ",
+            "󰁻 ",
+            "󰁽 ",
+            "󰁿 ",
+            "󰂁 ",
+            "󰁹 "
         ]
     },
     "clock": {
