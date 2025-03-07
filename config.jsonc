@@ -94,7 +94,7 @@
             "󰤥",
             "󰤨"
         ],
-        "on-click": "ghostty -e nmtui"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
